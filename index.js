@@ -1,10 +1,10 @@
-'use strict';
+'use strict'
 
 var lebab = require('lebab')
 
-exports.name = 'lebab';
-exports.inputFormats = ['lebab', 'lebabbar'];
-exports.outputFormat = 'html';
+exports.name = 'lebab'
+exports.inputFormats = ['lebab', 'lebabbar']
+exports.outputFormat = 'html'
 
 var defaultTransforms = [
   'arrow',
@@ -17,10 +17,10 @@ var defaultTransforms = [
 ]
 
 exports.render = function (str, options) {
-  options = options || defaultTransforms;
-  var result = lebab.transform(str, options);
+  options = options || defaultTransforms
+  var result = lebab.transform(str, options)
   result.warnings.forEach(function (warning) {
-    throw new Error("line " + warning.line + ': ' + warning.msg);
-  });
-  return result.code;
-};
+    throw new Error("line " + warning.line + ': ' + warning.msg)
+  })
+  return result.code
+}
