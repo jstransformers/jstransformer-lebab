@@ -17,10 +17,10 @@ var defaultTransforms = [
 ]
 
 exports.render = function (str, options) {
-  options = options || defaultTransforms
-  var { code, warnings } = lebab.transform(str, options)
-  warnings.forEach(function (warning) {
-    throw new Error("line " + warning.line + ': ' + warning.msg)
-  })
-  return code
+  options = options || defaultTransforms;
+  var result = lebab.transform(str, options);
+  result.warnings.forEach(function (warning) {
+    throw new Error("line " + warning.line + ': ' + warning.msg);
+  });
+  return result.code;
 };
