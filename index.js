@@ -20,7 +20,7 @@ exports.render = function (str, options) {
   options = options || defaultTransforms
   var result = lebab.transform(str, options)
   result.warnings.forEach(function (warning) {
-    throw new Error("line " + warning.line + ': ' + warning.msg)
+    throw new Error('line ' + warning.line + ': ' + warning.msg)
   })
   return result.code
 }
