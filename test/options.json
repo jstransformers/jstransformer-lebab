@@ -1,0 +1,9 @@
+[
+  "arrow",
+  "for-of",
+  "arg-spread",
+  "obj-method",
+  "obj-shorthand",
+  "no-strict",
+  "commonjs"
+]
