@@ -17,7 +17,7 @@
 var lebab = require('jstransformer')(require('jstransformer-lebab'));
 
 lebab.render('var lebab = require('lebab');').body
-//=> 'import lebab from 'lebab';'
+//=> "import lebab from 'lebab';"
 ```
 
 ## License
