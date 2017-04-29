@@ -1,5 +1,7 @@
 # jstransformer-lebab
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-lebab.svg)](https://greenkeeper.io/)
+
 [Lebab](http://lebab.io/) support for [JSTransformers](http://github.com/jstransformers).
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-lebab/master.svg)](https://travis-ci.org/jstransformers/jstransformer-lebab)
