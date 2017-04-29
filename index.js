@@ -1,12 +1,12 @@
 'use strict'
 
-var lebab = require('lebab')
+const lebab = require('lebab')
 
 exports.name = 'lebab'
 exports.inputFormats = ['lebab', 'lebabbar']
 exports.outputFormat = 'html'
 
-var defaultTransforms = [
+const defaultTransforms = [
   'arrow',
   'for-of',
   'arg-spread',
@@ -18,8 +18,8 @@ var defaultTransforms = [
 
 exports.render = function (str, options) {
   options = options || defaultTransforms
-  var result = lebab.transform(str, options)
-  result.warnings.forEach(function (warning) {
+  const result = lebab.transform(str, options)
+  result.warnings.forEach(warning => {
     throw new Error('line ' + warning.line + ': ' + warning.msg)
   })
   return result.code
