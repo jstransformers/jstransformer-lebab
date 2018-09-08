@@ -30,6 +30,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "lebab": "^2.6.1"
+    "lebab": "^3.0.0"
   }
 }
